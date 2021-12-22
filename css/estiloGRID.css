@@ -245,6 +245,7 @@ body {
     background: none;
     color: #fff;
     border-bottom: 1px solid #666;
+    text-align: center;
 }
 .main__form .form__form option {
     background: #000;
@@ -270,6 +271,13 @@ body {
 }
 .form__datos label {
     padding: 0 20px;
+}
+.form__form input:hover,
+.form__form select:hover,
+.form__form textarea:hover{
+    background-color: #222;
+    transition: .4s;
+    border-radius: 7px 7px 0 0;
 }
 /* CONTACTO - FIN */
 
@@ -380,7 +388,7 @@ body {
         margin: 10px;
     }
     .main {
-        margin-top: 100px;
+        margin-top: 180px;
         
     }
     .main__us {
