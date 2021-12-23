@@ -148,9 +148,11 @@ body {
     text-align: center;
     font-size: 2.188rem; /* 35px */
     margin: 0.625rem; /* 10px */
+    color: #fff;
 }
 .main__works {
-    background: rgba(73, 73, 73, 0.582);
+    background: rgb(0,0,0);
+    background: linear-gradient(71deg, rgba(0,0,0,1) 0%, rgba(26,69,63,1) 33%, rgba(19,33,56,1) 66%, rgba(0,0,0,1) 100%);
 }
 .work__gallery {
     display: grid;
@@ -190,7 +192,8 @@ body {
     display: flex;
     text-align: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgb(0,0,0);
+    background: linear-gradient(71deg, rgba(0,0,0,1) 0%, rgba(26,69,63,1) 33%, rgba(19,33,56,1) 66%, rgba(0,0,0,1) 100%);
     padding: 45px 0;
     justify-content: space-around;
 }
@@ -225,7 +228,8 @@ body {
 
 /* CONTACTO - INICIO */
 .main__form {
-    background: #181818;
+    background: rgb(0,0,0);
+    background: linear-gradient(71deg, rgba(0,0,0,1) 0%, rgba(26,69,63,1) 33%, rgba(19,33,56,1) 66%, rgba(0,0,0,1) 100%);
     color: #fff;
     display: flex;
     justify-content: center;
@@ -275,7 +279,7 @@ body {
 .form__form input:hover,
 .form__form select:hover,
 .form__form textarea:hover{
-    background-color: #222;
+    background-color: rgba(34, 34, 34, 0.5);
     transition: .4s;
     border-radius: 7px 7px 0 0;
 }
