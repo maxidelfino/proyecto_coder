@@ -55,6 +55,20 @@ body {
 .header__nav .active a{
     background: #999;
 } 
+#btn {
+    display: none;
+}
+.header__nav label .fas{ 
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    margin-right: 40px;
+    color: #fff;
+}
+.header__nav label .fas:hover{
+    background: rgba(0, 0, 0, 0.3);
+    transition: .5s; 
+}
 /* HEADER__INDEX - FIN */
 
 
@@ -306,26 +320,28 @@ body {
 
 @media (max-width: 992px) {  
     /* HEADER - INDEX */
-    .header__nav {
-        display: flex;
-        flex-direction: column;
-        height: 6.25rem; /*100px*/
-        justify-content: space-around;
-        align-items: center;
-    }
-    .header__logo {
-        margin-right: 5rem;
+    .header__nav label .fas{  
+        display: block;
     }
     .header__nav ul {
-       text-align: center;
-       margin-left: 40px;
-    }
-
-    /*SOBRE NOSOTROS */
-    .main__section {
+        margin: -5000px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: rgba(51, 51, 51, 0.8);
+        border-radius: 0 0 7px 7px;
         width: 100%;
-        margin: 5%;
+        text-align: center;
     }
+    .header__nav li {
+        margin: 10px;
+    }
+    #btn:checked ~ ul {
+        margin: 280px 0 0 0;
+        transition: all .7s;
+    }
+    /*SOBRE NOSOTROS */
     .main__section h2 {
         font-size: 2.5rem;
     }
@@ -361,48 +377,8 @@ body {
  } 
 
 @media (max-width: 768px) { 
-    .header__nav {
-        height: 180px;
-    }
-    .header__logo {
-        padding: 10px;
-    } 
-    .header__nav ul {
-        display: grid;
-        grid-template-columns: repeat(3, auto);
-        grid-auto-rows: auto ;
-        grid-template-areas: 
-        "a a a"
-        "b c d"
-        "e e e";
-    }
-    .a {
-        grid-area: a;
-    }
-    .b {
-        grid-area: b;
-    }
-    .c {
-        grid-area: c;
-    }
-    .d {
-        grid-area: d;
-    }
-    .e {
-        grid-area: e;
-    }
-    .header__nav ul li {
-        margin: 10px;
-    }
     .main {
-        margin-top: 180px;
-        
-    }
-    .main__us {
-        background-position-x: -100px;
-    }
-    .us__article {
-        margin-top: 25%;
+       padding: 20px 0;
     }
     .us__article h1 {
         font-size: 1.875rem;
@@ -410,9 +386,6 @@ body {
     }
     .us__article h2 {
         font-size: 1.562rem;
-    }
-    .main__works{
-        padding-top: 100px;
     }
     .work__gallery {
         display: grid;
@@ -454,12 +427,8 @@ body {
     }
 
     /*SOBRE EL SISTEMA*/
-    .main__sist {
-        margin-top: 180px;
-    }
     /* CONTACTO */
     .main__form {
-        margin-top: 100px;
         padding-bottom: 40px;
     }
     .form__datos {
@@ -472,22 +441,6 @@ body {
 } 
 
 @media (max-width: 597px) {
-    .header__nav {
-        height: 250px;
-    }
-    .header__nav ul{
-        margin-bottom: 20px;
-        display: grid;
-        align-items: center;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, auto);
-        grid-template-areas: 
-        "a"
-        "b"
-        "c"
-        "d"
-        "e";
-    }
     main.main {
         background: url(../assets/img_inicio_2.jpeg);
         background-size: cover;
@@ -495,12 +448,13 @@ body {
         background-position-x: 50%;
     }
     .main {
-        margin-top: 250px;    
+        padding: 20px;
     }
     .main__section {
         background: rgba(0, 0, 0, 0.3);
-        padding: 10px;
         border-radius: 7px;
+        width: 100%;
+        padding: 20px 0 ;
     }
     .main__section h2 {
         font-size: 32px;
@@ -511,17 +465,11 @@ body {
     .main__section p {
         font-size: 16px;
     }
-    .main__us {
-        margin-top: 45%;
-    }
     .us__article h1 {
         font-size: 1.562rem;
     }
     .us__article h2 {
         font-size: 1.25rem;
-    }
-    .main__works {
-        padding-top: 180px;
     }
     .work__title h1 {
         font-size: 1.56rem;
@@ -543,18 +491,11 @@ body {
     }
 
     /* SISTEMA */
-    .main__sist {
-        margin-top: 250px;
-    }
     .sist__section--img img{
         width: 100%;
     }
 
     /*CONTACTO*/
-    .main__form {
-        margin-top: 180px;
-        padding-bottom: 40px;
-    }
     .form__article h1 {
         font-size: 1.25rem; /*aprox 20px*/
     }
@@ -564,12 +505,7 @@ body {
     .header__logo{
         width: 100%;
         text-align: center;
-    }
-    .main__us {
-        margin-top:70% ;
-        padding: 0 -50px;
-        display: flex;
-        flex-wrap: wrap;
+        padding: 10px;
     }
     .main__us .us__article h1 {
         font-size: 1.563rem ;/*25px*/
