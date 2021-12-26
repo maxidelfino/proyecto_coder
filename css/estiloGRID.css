@@ -52,6 +52,9 @@ body {
 .header__nav ul a:hover {
     background: #aaa;
 }
+.header__nav .active a{
+    background: #999;
+} 
 /* HEADER__INDEX - FIN */
 
 
