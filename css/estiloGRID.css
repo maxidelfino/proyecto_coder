@@ -40,6 +40,7 @@ body {
     list-style: none;
     justify-content: space-between;
     margin-right: 2.5rem; /*40px*/
+    margin: 0 2.5rem 0 0;
 }
 .header__nav ul a {
     background: #fff;
@@ -120,7 +121,7 @@ body {
         background: rgba(170, 170, 170, 0.7);
         border-radius: 4px;
         padding: 5px;
-
+        color: #000;
     }
 /* FOOTER - FIN*/
 
@@ -136,9 +137,10 @@ body {
         align-items: center;
     }
     .main__us .us__article  {
+        color: #000;
         text-align: center;
         font-family: 'Raleway', sans-serif;
-        background-color: rgba(255, 255, 255, 0.300);
+        background-color: rgba(255, 255, 255, 0.400);
         padding: 1.875rem; /* 30px */
     }
     .us__article h1 {
@@ -147,10 +149,12 @@ body {
         padding-bottom: 0.938rem;
     }
     .us__article h2 {
+        font-weight: 700;
         font-size: 1.25rem; /* 20px */
         padding-bottom: 1.875rem; /* 30px */
     }
     .us__article h3 {
+        font-weight: 600;
         padding-bottom: 0.938rem; /* 15px */
     }
     .us__article p {
