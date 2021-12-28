@@ -12,10 +12,7 @@ body {
 
  /* HEADER__INDEX - INICIO */
 .header__nav {
-    display: flex;
     width: 100%;
-    justify-content: space-between;
-    align-items: center;
     height: 5rem; /*80px*/
     background: #000;
     position: fixed;
@@ -76,29 +73,27 @@ body {
 /* MAIN__INDEX - INICIO */
     main.main {
         background: url(../assets/img_inicio_2.jpeg);
-        background-size: cover;    
-        display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: flex-start;
-    }
+    } 
     .main__section {
+        margin-top: 5rem;
+        /*
         width: 60%;
         padding: 0 20px;
         color: #fff;
-        margin-top: 5rem;
+        */
     }
+    /*
     .main__section h2 {
         font-size: 3.125rem; /* 50px */
-    }
+  /*  }
     .main__section article h3 {
         font-size: 2.5rem; /* 40px */
-        margin: 0.313rem; /* 10px */
-    }
+      /*  margin: 0.313rem; /* 10px */
+  /*  }
     .main__section article p {
         font-size: 1.25rem; /* 20px */
-        font-weight: bold;
-    }
+   /*     font-weight: bold;
+    } */
 /* MAIN__INDEX - FIN */
 
 /* FOOTER - INICIO */
