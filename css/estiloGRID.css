@@ -9,21 +9,14 @@ body {
     grid-template-rows: auto 1fr auto;
     height: 100vh;
 }    
-
-/* HEADER__INDEX - FIN */
-
-
 /* MAIN__INDEX - INICIO */
     main.main {
         background: url(../assets/img_inicio_2.jpeg);
         background-size: cover;
     } 
     .main__section {
-        margin-top: 5rem;
         background: rgba(0, 0, 0, 0.3);
-        border-radius: 7px;
-        width: 80%;
-        padding: 0 20px;
+        margin: 12% 20px 20px 20px;
     }
     .main__section h2 {
         font-size: 3.125rem; /* 50px */
@@ -115,11 +108,7 @@ body {
     background: linear-gradient(71deg, rgba(0,0,0,1) 0%, rgba(26,69,63,1) 33%, rgba(19,33,56,1) 66%, rgba(0,0,0,1) 100%);
 }
 .sist__section--title {
-    width: 50%;
     background: rgba(255, 255, 255, 0.4);
-}
-.main__sist article {
-    padding: 20px 0;
 }
 .sist__title h1 {
     font-size: 2.5rem /*40px*/
@@ -197,12 +186,6 @@ body {
 
 @media (max-width: 992px) {  
     /* HEADER - INDEX */
-    .main__section h2 {
-        font-size: 2.5rem;
-    }
-    .main__section h3 {
-        font-size: 1.875rem;
-    }
     .main__us {
         background-position-y: 0;
         padding: 10% 20%;
@@ -233,9 +216,6 @@ body {
  } 
 
 @media (max-width: 768px) { 
-    .main {
-       padding: 20px 0;
-    }
     .us__article h1 {
         font-size: 1.875rem;
         font-weight: bold;
@@ -243,45 +223,6 @@ body {
     .us__article h2 {
         font-size: 1.562rem;
     }
-    .work__gallery {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 18.75rem);
-        grid-template-areas: 
-        "img1 img2"
-        "img3 img4"
-        "img5 img6"
-        "img7 img8"
-        "img9 img9";
-    }
-    .img1 {
-        grid-area: img1;
-    }
-    .img2 {
-        grid-area: img2;
-    }
-    .img3 {
-        grid-area: img3;
-    }
-    .img4 {
-        grid-area: img4;
-    }
-    .img5 {
-        grid-area: img5;
-    }
-    .img6 {
-        grid-area: img6;
-    }
-    .img7 {
-        grid-area: img7;
-    }
-    .img8 {
-        grid-area: img8;
-    }
-    .img9 {
-        grid-area: img9;
-    }
-
     /* CONTACTO */
     .main__form {
         padding-bottom: 40px;
@@ -307,9 +248,6 @@ body {
     }
     .main__section {
         background: rgba(0, 0, 0, 0.3);
-        border-radius: 7px;
-        width: 100%;
-        padding: 20px 0 ;
     }
     .main__section h2 {
         font-size: 32px;
@@ -329,27 +267,10 @@ body {
     .work__title h1 {
         font-size: 1.56rem;
     }
-    .work__gallery {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(9, 18.75rem);
-        grid-template-areas: 
-        "img1"
-        "img2"
-        "img3"
-        "img4"
-        "img5"
-        "img6"
-        "img7"
-        "img8"
-        "img9";
-    }
-
     /* SISTEMA */
     .sist__section--img img{
         width: 100%;
     }
-
     /*CONTACTO*/
     .form__article h1 {
         font-size: 1.25rem; /*aprox 20px*/
@@ -357,11 +278,6 @@ body {
 }
 
 @media (max-width: 300px) {  
-    .header__logo{
-        width: 100%;
-        text-align: center;
-        padding: 10px;
-    }
     .main__us .us__article h1 {
         font-size: 1.563rem ;/*25px*/
     }
