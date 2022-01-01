@@ -9,6 +9,11 @@ body {
     grid-template-rows: auto 1fr auto;
     height: 100vh;
 }    
+/*header*/
+.collapse {
+    justify-content: center;
+    padding-left: 50px;
+}
 /* MAIN__INDEX - INICIO */
     main.main {
         background: url(../assets/img_inicio_2.jpeg);
