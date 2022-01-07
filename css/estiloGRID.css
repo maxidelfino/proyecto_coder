@@ -14,9 +14,6 @@ body {
     justify-content: center;
     padding-left: 50px;
 }
-.body__index {
-    overflow-y: hidden;
-}
 /* MAIN__INDEX - INICIO */
     main.main {
         background: url(../assets/img_inicio_2.jpeg);
