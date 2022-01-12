@@ -1,0 +1,49 @@
+@import "/css/parciales/vars";
+.main__form {
+    background: $fondo-gradiant;
+    padding-top: 100px;
+    & h1 {
+        font-size: 1.875rem;
+        padding-bottom: 20px; 
+    }
+    .form__form {
+        & input,
+        & textarea,
+        & select{
+            border: none;
+            background: none;
+            color: #fff;
+            border-bottom: 1px solid #666;
+            text-align: center;
+        }
+        & option {
+            background: #000;
+        }
+        & .button {
+            text-transform: uppercase;
+            background: #666;
+            width: 40%;
+            border-radius: 4px;
+            height: 20px;
+            &:hover,
+            &:focus {
+                background: #fff;
+                color: #000;
+                transition: background-color 1s ease-out;
+            }
+        }
+        & .form__datos {
+            margin-bottom: 20px;
+        }
+        & .form__datos label {
+            padding: 0 20px;
+        }
+        & input:hover,
+        & select:hover,
+        & textarea:hover{
+            background-color: rgba(34, 34, 34, 0.5);
+            transition: .4s;
+            border-radius: 7px 7px 0 0;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@import "/css/parciales/vars";
+.main__works {
+    background: $fondo-gradiant;
+    .work__title {
+        font-size: 2.188rem; /* 35px */
+    }
+    #galeria img {
+        width: 100%;
+        height: 90%;
+        &:hover {
+            filter: blur(2px);
+        }        
+    }
+}

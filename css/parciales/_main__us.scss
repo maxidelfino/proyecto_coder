@@ -1,0 +1,31 @@
+@import "/css/parciales/vars";
+.main__us {
+    background-image: url(../assets/casaEjemplo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -50px;
+    & .us__article  {
+        color: #000;
+        font-family: 'Raleway', sans-serif;
+        background-color: $transp;
+        padding: 1.875rem; /* 30px */
+        margin: 5rem 0 0 0 ;
+        & h1 {
+            font-size: 3.125rem; /* 50px */ 
+            font-weight: 900;
+            padding-bottom: 0.938rem;
+        }
+        & h2 {
+            font-weight: 700;
+            font-size: 1.25rem; /* 20px */
+            padding-bottom: 1.875rem; /* 30px */
+        }
+        & h3 {
+            font-weight: 600;
+            padding-bottom: 0.938rem; /* 15px */
+        }
+        & p {
+            font-weight: bold;
+        }
+    }
+}

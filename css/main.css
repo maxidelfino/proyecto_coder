@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif; }
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh; }
+
+/*header*/
+.collapse {
+  justify-content: center;
+  padding-left: 50px; }
+
+.main {
+  background: url(../assets/img_inicio_2.jpeg);
+  background-size: cover; }
+  .main__section {
+    background: rgba(0, 0, 0, 0.3);
+    margin: 12% 20px 20px 20px; }
+    .main__section h2 {
+      font-size: 3.125rem;
+      /* 50px */ }
+    .main__section h3 {
+      font-size: 2.5rem;
+      /* 40px */
+      margin: 0.313rem;
+      /* 10px */ }
+    .main__section p {
+      font-size: 1.25rem;
+      /* 20px */
+      font-weight: bold; }
+
+footer {
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  background-color: #fff; }
+  footer p {
+    margin: 0; }
+    footer p a {
+      color: #000;
+      text-decoration: none;
+      transition: .3s; }
+      footer p a:hover {
+        background: rgba(170, 170, 170, 0.7);
+        border-radius: 4px;
+        padding: 5px;
+        color: #000; }
+
+.main__us {
+  background-image: url(../assets/casaEjemplo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -50px; }
+  .main__us .us__article {
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 1.875rem;
+    /* 30px */
+    margin: 5rem 0 0 0; }
+    .main__us .us__article h1 {
+      font-size: 3.125rem;
+      /* 50px */
+      font-weight: 900;
+      padding-bottom: 0.938rem; }
+    .main__us .us__article h2 {
+      font-weight: 700;
+      font-size: 1.25rem;
+      /* 20px */
+      padding-bottom: 1.875rem;
+      /* 30px */ }
+    .main__us .us__article h3 {
+      font-weight: 600;
+      padding-bottom: 0.938rem;
+      /* 15px */ }
+    .main__us .us__article p {
+      font-weight: bold; }
+
+.main__works {
+  background: linear-gradient(71deg, black 0%, #1a453f 33%, #132138 66%, black 100%); }
+  .main__works .work__title {
+    font-size: 2.188rem;
+    /* 35px */ }
+  .main__works #galeria img {
+    width: 100%;
+    height: 90%; }
+    .main__works #galeria img:hover {
+      filter: blur(2px); }
+
+.main__sist {
+  background: linear-gradient(71deg, black 0%, #1a453f 33%, #132138 66%, black 100%); }
+  .main__sist .sist__section--title {
+    background: rgba(255, 255, 255, 0.4); }
+    .main__sist .sist__section--title .sist__title h1 {
+      font-size: 2.5rem; }
+    .main__sist .sist__section--title .sist__article h2 {
+      font-size: 1.875rem;
+      /*30px*/
+      padding-bottom: 20px; }
+    .main__sist .sist__section--title .sist__article h3 {
+      font-size: 1.5rem;
+      /*24px*/
+      padding-bottom: 20px; }
+    .main__sist .sist__section--title .sist__article p {
+      font-size: 1rem;
+      /*16px*/
+      font-weight: bold; }
+
+.main__form {
+  background: linear-gradient(71deg, black 0%, #1a453f 33%, #132138 66%, black 100%);
+  padding-top: 100px; }
+  .main__form h1 {
+    font-size: 1.875rem;
+    padding-bottom: 20px; }
+  .main__form .form__form input,
+  .main__form .form__form textarea,
+  .main__form .form__form select {
+    border: none;
+    background: none;
+    color: #fff;
+    border-bottom: 1px solid #666;
+    text-align: center; }
+  .main__form .form__form option {
+    background: #000; }
+  .main__form .form__form .button {
+    text-transform: uppercase;
+    background: #666;
+    width: 40%;
+    border-radius: 4px;
+    height: 20px; }
+    .main__form .form__form .button:hover, .main__form .form__form .button:focus {
+      background: #fff;
+      color: #000;
+      transition: background-color 1s ease-out; }
+  .main__form .form__form .form__datos {
+    margin-bottom: 20px; }
+  .main__form .form__form .form__datos label {
+    padding: 0 20px; }
+  .main__form .form__form input:hover,
+  .main__form .form__form select:hover,
+  .main__form .form__form textarea:hover {
+    background-color: rgba(34, 34, 34, 0.5);
+    transition: .4s;
+    border-radius: 7px 7px 0 0; }
