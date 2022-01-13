@@ -1,22 +1,40 @@
-@import "/css/parciales/vars";
+@import "../parciales/vars";
+@import "../parciales/responsive";
 .main__sist {
     background: $fondo-gradiant;
     .sist__section--title {
         background: $transp;
         .sist__title h1 {
-            font-size: 2.5rem /*40px*/
+            font-size: 2.5rem /*40px*/;
+            @include net {
+                font-size: 1.875rem /*30px*/
+            }
         }
         .sist__article h2 {
             font-size: 1.875rem; /*30px*/
             padding-bottom: 20px;
+            @include net {
+                font-size: 1.563rem; /*25px*/
+            }
         }
         .sist__article h3 {
             font-size: 1.5rem; /*24px*/
             padding-bottom: 20px;
+            @include net {
+                font-size: 1.25rem; /*20px*/
+            }
         }
         .sist__article p {
             font-size: 1rem; /*16px*/
             font-weight: bold;
+            @include net {
+                font-size: 1rem; /*16px*/
+            }
+        }
+    }
+    .sist__section--img img{
+        @include tablet-med {
+            width: 100%;
         }
     }
 }

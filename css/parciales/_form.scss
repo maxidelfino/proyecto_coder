@@ -1,10 +1,20 @@
-@import "/css/parciales/vars";
+@import "../parciales/vars";
+@import "../parciales/responsive";
 .main__form {
     background: $fondo-gradiant;
     padding-top: 100px;
+    @include tablet {
+        padding-bottom: 40px;
+    }
     & h1 {
         font-size: 1.875rem;
         padding-bottom: 20px; 
+        @include tablet {
+            font-size: 1.56rem; /*aprox 25px*/
+        }
+        @include tablet-med {
+            font-size: 1.25rem; /*aprox 20px*/
+        }
     }
     .form__form {
         & input,
@@ -34,6 +44,10 @@
         }
         & .form__datos {
             margin-bottom: 20px;
+            @include tablet {
+                display: flex;
+                flex-direction: column;
+            }
         }
         & .form__datos label {
             padding: 0 20px;
