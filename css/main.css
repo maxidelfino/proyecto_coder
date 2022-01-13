@@ -75,6 +75,10 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: -50px; }
+  @media screen and (max-width: 992px) {
+    .main__us {
+      background-position-y: 0;
+      padding: 10% 20%; } }
   .main__us .us__article {
     color: #000;
     font-family: 'Raleway', sans-serif;
@@ -97,6 +101,10 @@ footer {
       @media screen and (max-width: 597px) {
         .main__us .us__article h1 {
           font-size: 1.562rem; } }
+      @media screen and (max-width: 300px) {
+        .main__us .us__article h1 {
+          font-size: 1.563rem;
+          /*25px*/ } }
     .main__us .us__article h2 {
       font-weight: 700;
       font-size: 1.25rem;
@@ -123,10 +131,6 @@ footer {
           /*15px*/ } }
     .main__us .us__article p {
       font-weight: bold; }
-  @media screen and (max-width: 992px) {
-    .main__us {
-      background-position-y: 0;
-      padding: 10% 20%; } }
 
 .main__works {
   background: linear-gradient(71deg, black 0%, #1a453f 33%, #132138 66%, black 100%); }

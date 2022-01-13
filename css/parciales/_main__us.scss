@@ -5,6 +5,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: -50px;
+    @include net {
+        background-position-y: 0;
+        padding: 10% 20%;   
+    }
     & .us__article  {
         color: #000;
         font-family: 'Raleway', sans-serif;
@@ -26,7 +30,7 @@
                 font-size: 1.562rem;
             }
             @include mobil{
-
+                font-size: 1.563rem ;/*25px*/
             }
         }
         & h2 {
@@ -50,13 +54,9 @@
                 font-size: 0.9rem; /*15px*/
             }
         }
-        
+
         & p {
             font-weight: bold;
         }
-    }
-    @include net {
-        background-position-y: 0;
-        padding: 10% 20%;   
     }
 }
