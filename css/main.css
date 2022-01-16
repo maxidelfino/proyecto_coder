@@ -140,9 +140,33 @@ footer {
     @media screen and (max-width: 597px) {
       .main__works .work__title {
         font-size: 1.56rem; } }
+  .main__works #galeria .row {
+    justify-content: center;
+    grid-gap: 25px; }
+  .main__works #galeria picture {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 250px; }
+    .main__works #galeria picture p {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 7px;
+      transition: .5s;
+      z-index: 1000;
+      top: 25%;
+      left: 5%;
+      text-decoration: none;
+      color: #000;
+      width: 90%;
+      opacity: 0; }
+      .main__works #galeria picture p:hover {
+        opacity: 1; }
   .main__works #galeria img {
-    width: 100%;
-    height: 90%; }
+    width: 300px;
+    height: 250px; }
     .main__works #galeria img:hover {
       filter: blur(2px); }
 
