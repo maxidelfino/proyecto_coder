@@ -148,8 +148,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    height: 250px; }
+    width: 350px;
+    height: 300px; }
     .main__works #galeria picture p {
       position: absolute;
       background: rgba(255, 255, 255, 0.8);
@@ -165,8 +165,8 @@ footer {
       .main__works #galeria picture p:hover {
         opacity: 1; }
   .main__works #galeria img {
-    width: 300px;
-    height: 250px; }
+    width: 350px;
+    height: 300px; }
     .main__works #galeria img:hover {
       filter: blur(2px); }
 
