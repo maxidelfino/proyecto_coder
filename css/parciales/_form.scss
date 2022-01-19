@@ -1,5 +1,6 @@
 @import "../parciales/vars";
 @import "../parciales/responsive";
+@import "../parciales/mapas";
 .main__form {
     background: $fondo-gradiant;
     padding-top: 100px;
@@ -7,13 +8,13 @@
         padding-bottom: 40px;
     }
     & h1 {
-        font-size: 1.875rem;
+        font-size: map-get($font,30px);
         padding-bottom: 20px; 
         @include tablet {
-            font-size: 1.56rem; /*aprox 25px*/
+            font-size: map-get($font,25px);
         }
         @include tablet-med {
-            font-size: 1.25rem; /*aprox 20px*/
+            font-size: map-get($font,20px);
         }
     }
     .form__form {
@@ -52,12 +53,16 @@
         & .form__datos label {
             padding: 0 20px;
         }
-        & input:hover,
-        & select:hover,
         & textarea:hover{
             background-color: rgba(34, 34, 34, 0.5);
             transition: .4s;
             border-radius: 7px 7px 0 0;
+        }
+        & input:hover {
+            @extend textarea:hover;
+        }
+        & select:hover {
+            @extend textarea:hover;
         }
     }
 }

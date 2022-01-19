@@ -1,5 +1,6 @@
 @import "../parciales/vars";
 @import "../parciales/responsive";
+@import "../parciales/mapas";
 .main__us {
     background-image: url(../assets/casaEjemplo.jpg);
     background-size: cover;
@@ -13,48 +14,47 @@
         color: #000;
         font-family: 'Raleway', sans-serif;
         background-color: $transp;
-        padding: 1.875rem; /* 30px */
+        padding: map-get($font,30px);
         margin: 5rem 0 0 0 ;
         & h1 {
-            font-size: 3.125rem; /* 50px */ 
+            font-size: map-get($font,50px); 
             font-weight: 900;
-            padding-bottom: 0.938rem;
+            padding-bottom: map-get($font,15px);
             @include pc {
-                font-size: 2.5rem;
+                font-size: map-get($font,40px);
             }
             @include tablet {
-                font-size: 1.875rem;
+                font-size: map-get($font,30px);
                 font-weight: bold;
             }
             @include tablet-med {
-                font-size: 1.562rem;
+                font-size: map-get($font,25px);
             }
             @include mobil{
-                font-size: 1.563rem ;/*25px*/
+                font-size: map-get($font,25px);
             }
         }
         & h2 {
             font-weight: 700;
-            font-size: 1.25rem; /* 20px */
-            padding-bottom: 1.875rem; /* 30px */
+            font-size: map-get($font,20px);
+            padding-bottom: map-get($font,30px);
             @include tablet {
-            font-size: 1.562rem; 
+            font-size: map-get($font,25px); 
             }
             @include tablet-med {
-                font-size: 1.25rem;
+                font-size: map-get($font,20px);
             }
             @include mobil{
-                font-size: 0.938rem; /*15px*/
+                font-size: map-get($font,15px);
             }
         }
         & h3 {
             font-weight: 600;
-            padding-bottom: 0.938rem; /* 15px */
+            padding-bottom: map-get($font,15px);
             @include mobil{
-                font-size: 0.9rem; /*15px*/
+                font-size: map-get($font,15px);
             }
         }
-
         & p {
             font-weight: bold;
         }

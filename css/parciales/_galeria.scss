@@ -1,11 +1,12 @@
 @import "../parciales/vars";
 @import "../parciales/responsive";
+@import "../parciales/mapas";
 .main__works {
     background: $fondo-gradiant;
     .work__title {
-        font-size: 2.188rem; /* 35px */
+        font-size: map-get($font,35px);
         @include tablet-med {
-            font-size: 1.56rem;
+            font-size: map-get($font,25px);
         }
     }
     #galeria {
@@ -26,7 +27,6 @@
                 border-radius: 7px;
                 transition: .5s;
                 z-index: 1000;
-                top:25%;
                 left: 5%;
                 text-decoration: none;
                 color: #000;
