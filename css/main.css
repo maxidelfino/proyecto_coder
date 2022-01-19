@@ -143,7 +143,9 @@ footer {
       border-radius: 7px;
       transition: .5s;
       z-index: 1000;
+      top: 35%;
       left: 5%;
+      margin: 0;
       text-decoration: none;
       color: #000;
       width: 90%;
