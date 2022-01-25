@@ -12,7 +12,6 @@
     #galeria {
         .row {
             justify-content: center;
-            grid-gap: 25px;
         }
         & picture {
             position: relative;
@@ -37,13 +36,26 @@
                 &:hover {
                     opacity: 1;
                 }
-            }                                                                                                                                                                                                                    
+            }
+            @include tablet-med {
+                width: 250px;
+                height: 225px;
+                overflow-x: hidden;
+            }
+            @include tablet {
+                overflow-x: hidden;
+                grid-gap: 2px;
+            }                                                                                                                                                                                  
         }
         & img {
             width: 350px;
             height: 300px;
             &:hover {
                 filter: blur(2px);
+            }
+            @include tablet-med {
+                width: 250px;
+                height: 200px;
             }
         }
     }

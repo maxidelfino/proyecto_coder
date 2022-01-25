@@ -1,10 +1,14 @@
+@import "../parciales/responsive";
 body {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    height: 100vh;
-  }    
-  /*header*/
-  .collapse {
-    justify-content: center;
-    padding-left: 50px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}    
+/*header*/
+.collapse {
+  justify-content: center;
+  margin-left: 50px;
+}
+.container__navbar {
+  padding: 0;
 }

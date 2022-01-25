@@ -12,7 +12,10 @@ body {
 /*header*/
 .collapse {
   justify-content: center;
-  padding-left: 50px; }
+  margin-left: 50px; }
+
+.container__navbar {
+  padding: 0; }
 
 .main {
   background: url(../assets/img_inicio_2.jpeg);
@@ -128,8 +131,7 @@ footer {
       .main__works .work__title {
         font-size: 1.563rem; } }
   .main__works #galeria .row {
-    justify-content: center;
-    grid-gap: 25px; }
+    justify-content: center; }
   .main__works #galeria picture {
     position: relative;
     display: flex;
@@ -152,11 +154,24 @@ footer {
       opacity: 0; }
       .main__works #galeria picture p:hover {
         opacity: 1; }
+    @media screen and (max-width: 597px) {
+      .main__works #galeria picture {
+        width: 250px;
+        height: 225px;
+        overflow-x: hidden; } }
+    @media screen and (max-width: 768px) {
+      .main__works #galeria picture {
+        overflow-x: hidden;
+        grid-gap: 2px; } }
   .main__works #galeria img {
     width: 350px;
     height: 300px; }
     .main__works #galeria img:hover {
       filter: blur(2px); }
+    @media screen and (max-width: 597px) {
+      .main__works #galeria img {
+        width: 250px;
+        height: 200px; } }
 
 .main__sist {
   background: linear-gradient(71deg, black 0%, #1a453f 33%, #132138 66%, black 100%); }
