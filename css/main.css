@@ -138,7 +138,8 @@ footer {
     justify-content: center;
     align-items: center;
     width: 350px;
-    height: 300px; }
+    height: 300px;
+    border-radius: 7px; }
     .main__works #galeria picture p {
       position: absolute;
       background: rgba(255, 255, 255, 0.8);
@@ -165,7 +166,8 @@ footer {
         grid-gap: 2px; } }
   .main__works #galeria img {
     width: 350px;
-    height: 300px; }
+    height: 300px;
+    padding: 15px; }
     .main__works #galeria img:hover {
       filter: blur(2px); }
     @media screen and (max-width: 597px) {
