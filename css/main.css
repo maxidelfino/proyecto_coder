@@ -14,9 +14,6 @@ body {
   justify-content: center;
   margin-left: 50px; }
 
-.container__navbar {
-  padding: 0; }
-
 .main {
   background: url(../assets/img_inicio_2.jpeg);
   background-size: cover; }
@@ -81,7 +78,7 @@ footer {
   .main__us .us__article {
     color: #000;
     font-family: 'Raleway', sans-serif;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.6);
     padding: 1.875rem;
     margin: 5rem 0 0 0; }
     .main__us .us__article h1 {
@@ -121,7 +118,8 @@ footer {
         .main__us .us__article h3 {
           font-size: 0.938rem; } }
     .main__us .us__article p {
-      font-weight: bold; }
+      font-weight: 700;
+      font-size: 1.25rem; }
 
 .main__works {
   background: linear-gradient(71deg, black 0%, #1a453f 33%, #132138 66%, black 100%); }
@@ -152,7 +150,8 @@ footer {
       text-decoration: none;
       color: #000;
       width: 90%;
-      opacity: 0; }
+      opacity: 0;
+      font-weight: bold; }
       .main__works #galeria picture p:hover {
         opacity: 1; }
     @media screen and (max-width: 597px) {
@@ -178,9 +177,10 @@ footer {
 .main__sist {
   background: linear-gradient(71deg, black 0%, #1a453f 33%, #132138 66%, black 100%); }
   .main__sist .sist__section--title {
-    background: rgba(255, 255, 255, 0.4); }
+    background: rgba(255, 255, 255, 0.6); }
     .main__sist .sist__section--title .sist__title h1 {
-      font-size: 2.5rem; }
+      font-size: 2.5rem;
+      font-weight: bold; }
       @media screen and (max-width: 992px) {
         .main__sist .sist__section--title .sist__title h1 {
           font-size: 1.875rem; } }
