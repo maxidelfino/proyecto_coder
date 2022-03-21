@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>ORMA Steel | Sacá todas tus dudas</title>
     <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/main.js" async></script>
 </head>
 <body>
     <header class="header">
@@ -45,28 +46,29 @@
                 <h1>Dejanos tus dudas para ayudarte a resolverlas</h1>
             </article>
             <article class="form__form">
-                <form >
+                <form id="form">
                     <section class="form__datos d-flex flex-column-md container-fluid pe-5 ps-5">
                         <div class="row">
                             <label class="col-sm-12 col-md-12 col-lg-12" for="name">Nombre:</label> <br>
-                                <input type="text" name="name" id="name" placeholder="Escriba su nombre"><br><br>
+                                <input type="text" name="name" id="name" placeholder="Escriba su nombre" required><br><br>
                             <label for="apellido">Apellido:</label><br>
-                                <input type="text" name="apellido" id="apellido" placeholder="Escriba su apellido"><br><br>
-                            <label class="mail" for="mail">Email:</label> <br>
-                                <input type="email" name="mail" id="mail" placeholder="Escriba su email"> <br><br>
+                                <input type="text" name="apellido" id="apellido" placeholder="Escriba su apellido" required><br><br>
+                            <label class="email" for="email">Email:</label> <br>
+                                <input type="email" name="email" id="email" placeholder="Escriba su email" required> <br><br>
                         </div>
                     </section> 
                     <section class="form__consulta">
-                        <label for="talle">¿Por cual razón te comunicas con nosotros?:</label> <br>
-                        <select name="talle" id="talle">
-                            <option value="presupuesto">Presupuesto</option>
-                            <option value="proyecto">Consulta sobre proyectos</option>
-                            <option value="otro">Otro</option>
+                        <label for="option">¿Por cual razón te comunicas con nosotros?:</label> <br>
+                        <select name="option" id="option">
+                            <option value="Presupuesto">Presupuesto</option>
+                            <option value="Proyecto">Consulta sobre proyectos</option>
+                            <option value="Otro">Otro</option>
                         </select><br><br>
-                        <textarea name="Consulta" id="Consulta" cols="30" rows="7" placeholder="Escribe tu consulta"></textarea><br><br>
+                        <textarea name="consulta" id="consulta" cols="30" rows="7" placeholder="Escribe tu consulta" required   ></textarea><br><br>
                             <input class="button" type="submit" value="Enviar formulario">
                     </section>  
                 </form>
+                <a href="mailto:ormasteelconstrucciones@gmail.com" id="buttonEmail">Email</a>
             </article>
         </section>
     </main> 
