@@ -1,59 +1,292 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./assets/logoORMA.jpg" type="image/x-icon">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="construcción, steel frame, steel, frame, sistema constructivo, liviano, rígido">
+    <meta name="description" content="Somos una empresa de construcción en seco que utiliza el STEEL FRAME como sistema constructivo, lo cuál agiliza el tiempo en obra además de garantizar la calidad de la misma.">
     <meta property="og:url" content="https://ormasteel.000webhostapp.com/"/>
     <meta property="og:title" content="ORMA Steel - Construimos tus sueños | Construcción en seco">
     <meta property="og:image" content=""/>
     <meta property="og:description" content="Somos una empresa constructora que se especializa en el sistema constructivo STEEL FRAMING">
     <meta property="og:type" content="website"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="construcción, steel frame, steel, frame, sistema constructivo, liviano, rígido">
-    <meta name="description" content="Somos una empresa de construcción en seco que utiliza el STEEL FRAME como sistema constructivo, lo cuál agiliza el tiempo en obra además de garantizar la calidad de la misma.">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <title>ORMA Steel | Hacemos realidad tus sueños</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/logoORMA.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./css/main.css">
-    <script src="js/main.js" async></script>
+
+    <title>ORMA Steel | Construcciones en Steel Frame</title>
 </head>
-<body class="body__index">
-    <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <div class="container-fluid container__navbar">
-              <a class="navbar-brand" href="./index.html" title="ORMA Construcciones">ORMA Construcciones</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span> 
-              </button>
-              <div class="collapse navbar-collapse text-center justify-content-end me-5" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="./index.html" title="Inicio">Inicio</a>
-                  <a class="nav-link" href="./secciones/sobreNosotros.html" title="Conocenos un poco más">Sobre Nosotros</a>
-                  <a class="nav-link" href="./secciones/nuestrosTrabajos.html" title="Mirá lo que hicimos">Nuestros Trabajos</a>
-                  <a class="nav-link" href="./secciones/sobreElSistema.html" title="Aprendé más sobre el sistema">Sobre el Sistema</a>
-                  <a class="nav-link" href="./secciones/contacto.html" title="Contactanos">Contacto</a>
-                </div>
-              </div>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="./index.html" class="nav__logo">ORMA Steel</a>
+            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+            </button>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="./index.html" class="nav__link active">Inicio</a></li>
+                    <li class="nav__item"><a href="#sobre-nosotros" class="nav__link">Sobre Nosotros</a></li>
+                    <li class="nav__item"><a href="#proyectos" class="nav__link">Proyectos</a></li>
+                    <li class="nav__item"><a href="#proceso" class="nav__link">Proceso</a></li>
+                    <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
+                </ul>
             </div>
-          </nav> 
+        </nav>
     </header>
-    <main class="main text-center text-light">
-        <section class="main__section p-4 rounded-3 animate__animated animate__swing">
-            <article >
-                <h2>Nos dedicamos a darle forma a tus sueños</h2> <br><br>
-                <h3>Te contamos un poco sobre nosotros...</h3> <br><br>
-                <p>Somos una empresa especializada en STEEL FRAME, un sistema constructivo liviano y resistente de perfiles de acero galvanizado.</p>
-            </article>
+
+    <main>
+        <section class="hero">
+            <div class="hero__overlay"></div>
+            <div class="hero__content container">
+                <h1 class="hero__title">Construcciones en Steel Frame</h1>
+                <p class="hero__subtitle">Innovación, calidad y rapidez en cada proyecto</p>
+                <div class="hero__buttons">
+                    <a href="#contacto" class="btn btn--primary">Contáctanos</a>
+                    <a href="#proyectos" class="btn btn--secondary">Ver Proyectos</a>
+                </div>
+            </div>
+            <div class="hero__scroll">
+                <a href="#sobre-nosotros" aria-label="Scroll down">
+                    <div class="hero__scroll-icon"></div>
+                </a>
+            </div>
+        </section>
+
+        <section class="about" id="sobre-nosotros">
+            <div class="container">
+                <div class="about__content">
+                    <div class="about__text">
+                        <h2 class="section__title">Sobre Nosotros</h2>
+                        <p class="about__description">Somos una empresa familiar especializada en construcción con Steel Frame, un sistema constructivo innovador que combina rapidez, calidad y eficiencia.</p>
+                        <p class="about__description">Con años de experiencia, nos hemos consolidado como líderes en construcción en seco, entregando proyectos que superan las expectativas de nuestros clientes.</p>
+                        <div class="about__features">
+                            <div class="about__feature">
+                                <h3 class="about__feature-number">10+</h3>
+                                <p class="about__feature-text">Años de experiencia</p>
+                            </div>
+                            <div class="about__feature">
+                                <h3 class="about__feature-number">50+</h3>
+                                <p class="about__feature-text">Proyectos completados</p>
+                            </div>
+                            <div class="about__feature">
+                                <h3 class="about__feature-number">100%</h3>
+                                <p class="about__feature-text">Clientes satisfechos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__image">
+                        <img src="./assets/casaEjemplo.jpg" alt="Casa construida con Steel Frame" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="proyectos">
+            <div class="container">
+                <h2 class="section__title section__title--center">Nuestros Proyectos</h2>
+                <p class="section__subtitle">Cada proyecto es una muestra de nuestro compromiso con la excelencia</p>
+
+                <div class="projects__grid">
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="./assets/proyecto_syf_1.jpg" alt="Proyecto residencial en Funes" loading="lazy">
+                            <div class="project-card__overlay">
+                                <h3 class="project-card__title">Proyecto Funes City</h3>
+                                <p class="project-card__description">Construcción completa con materiales premium</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="./assets/proyecto_syf_2.jpg" alt="Vista exterior del proyecto" loading="lazy">
+                            <div class="project-card__overlay">
+                                <h3 class="project-card__title">Casa Moderna</h3>
+                                <p class="project-card__description">Diseño contemporáneo y funcional</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="./assets/proyecto_syf_3.jpg" alt="Detalle arquitectónico" loading="lazy">
+                            <div class="project-card__overlay">
+                                <h3 class="project-card__title">Ampliación Residencial</h3>
+                                <p class="project-card__description">Integración perfecta con la estructura existente</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="./assets/proyecto_syf_4.jpg" alt="Interior del proyecto" loading="lazy">
+                            <div class="project-card__overlay">
+                                <h3 class="project-card__title">Vivienda Familiar</h3>
+                                <p class="project-card__description">Espacios amplios y luminosos</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="./assets/armado_estructura.jpg" alt="Estructura de acero galvanizado" loading="lazy">
+                            <div class="project-card__overlay">
+                                <h3 class="project-card__title">Estructura Portante</h3>
+                                <p class="project-card__description">Perfiles de acero galvanizado de alta resistencia</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="./assets/detalle_cielorraso.jpg" alt="Detalle de terminación" loading="lazy">
+                            <div class="project-card__overlay">
+                                <h3 class="project-card__title">Terminaciones</h3>
+                                <p class="project-card__description">Detalles que marcan la diferencia</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="process" id="proceso">
+            <div class="container">
+                <h2 class="section__title section__title--center">Nuestro Proceso</h2>
+                <p class="section__subtitle">De la idea a la realidad en 5 pasos</p>
+
+                <div class="timeline">
+                    <div class="timeline__item">
+                        <div class="timeline__marker">1</div>
+                        <div class="timeline__content">
+                            <h3 class="timeline__title">Consulta Inicial</h3>
+                            <p class="timeline__description">Analizamos tus necesidades y presupuesto</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <div class="timeline__marker">2</div>
+                        <div class="timeline__content">
+                            <h3 class="timeline__title">Diseño y Planificación</h3>
+                            <p class="timeline__description">Creamos el proyecto adaptado a tus requisitos</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <div class="timeline__marker">3</div>
+                        <div class="timeline__content">
+                            <h3 class="timeline__title">Preparación del Terreno</h3>
+                            <p class="timeline__description">Fundaciones y preparación de la base</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <div class="timeline__marker">4</div>
+                        <div class="timeline__content">
+                            <h3 class="timeline__title">Construcción</h3>
+                            <p class="timeline__description">Montaje de estructura y cerramientos</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <div class="timeline__marker">5</div>
+                        <div class="timeline__content">
+                            <h3 class="timeline__title">Terminaciones y Entrega</h3>
+                            <p class="timeline__description">Detalles finales y tu nueva casa lista</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contacto">
+            <div class="container">
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <h2 class="section__title">Hablemos de tu Proyecto</h2>
+                        <p class="contact__description">Estamos listos para hacer realidad la casa de tus sueños. Contáctanos hoy mismo.</p>
+
+                        <div class="contact__details">
+                            <div class="contact__detail">
+                                <h3 class="contact__detail-title">Email</h3>
+                                <p class="contact__detail-text">ormasteelconstrucciones@gmail.com</p>
+                            </div>
+
+                            <div class="contact__detail">
+                                <h3 class="contact__detail-title">Síguenos</h3>
+                                <a href="https://www.instagram.com/ormasteelframe/" target="_blank" rel="noopener noreferrer" class="contact__social">Instagram</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact__form" id="contact-form">
+                        <div class="form__group">
+                            <input type="text" name="name" id="name" class="form__input" placeholder="Nombre" required>
+                        </div>
+
+                        <div class="form__group">
+                            <input type="email" name="email" id="email" class="form__input" placeholder="Email" required>
+                        </div>
+
+                        <div class="form__group">
+                            <select name="subject" id="subject" class="form__input" required>
+                                <option value="">Motivo de consulta</option>
+                                <option value="Presupuesto">Presupuesto</option>
+                                <option value="Proyecto">Consulta sobre proyectos</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="form__group">
+                            <textarea name="message" id="message" class="form__input form__textarea" placeholder="Tu mensaje" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary btn--full">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-        <p>Seguinos en <span><a href="https://www.instagram.com/ormasteelframe/" target="_black" title="Haceme click!">instagram</a></span> y mirá algunos de nuestros proyectos.</p>
-        <p>Página Web diseñada por <a href="https://www.linkedin.com/in/maximiliano-delfino?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BwRLxh4z8Qi%2BolV8AEdYr8A%3D%3D" target="_black" title="Mirá un poco de sus trabajos">Maximiliano Delfino</a>.</p>Todos los derechos reservados.
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <h3 class="footer__logo">ORMA Steel</h3>
+                    <p class="footer__description">Construcciones en Steel Frame de alta calidad</p>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__title">Navegación</h4>
+                    <ul class="footer__list">
+                        <li><a href="./index.html" class="footer__link">Inicio</a></li>
+                        <li><a href="#sobre-nosotros" class="footer__link">Sobre Nosotros</a></li>
+                        <li><a href="#proyectos" class="footer__link">Proyectos</a></li>
+                        <li><a href="#contacto" class="footer__link">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__social">
+                    <h4 class="footer__title">Síguenos</h4>
+                    <a href="https://www.instagram.com/ormasteelframe/" target="_blank" rel="noopener noreferrer" class="footer__social-link">Instagram</a>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2024 ORMA Steel. Todos los derechos reservados.</p>
+                <p class="footer__credits">Diseñado por <a href="https://www.linkedin.com/in/maximiliano-delfino" target="_blank" rel="noopener noreferrer" class="footer__link">Maximiliano Delfino</a></p>
+            </div>
+        </div>
     </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <a href="#buttonEmail" id="buttonEmail" style="display: none;"></a>
+    <script src="./js/main.js"></script>
 </body>
 </html>

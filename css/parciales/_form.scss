@@ -53,16 +53,12 @@
         & .form__datos label {
             padding: 0 20px;
         }
-        & textarea:hover{
+        & textarea:hover,
+        & input:hover,
+        & select:hover {
             background-color: rgba(34, 34, 34, 0.5);
             transition: .4s;
             border-radius: 7px 7px 0 0;
-        }
-        & input:hover {
-            @extend textarea:hover;
-        }
-        & select:hover {
-            @extend textarea:hover;
         }
     }
 }
